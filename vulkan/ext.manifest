@@ -1,0 +1,26 @@
+name: 'Vulkan'
+
+platforms:
+    x86_64-osx:
+        context:
+            frameworks: ['Metal', 'IOSurface', 'QuartzCore']
+            libs:       ['graphics_vulkan', 'MoltenVK']
+    arm64-ios:
+        context:
+            frameworks: ['Metal', 'QuartzCore']
+            libs:       ['graphics_vulkan', 'MoltenVK']
+    x86_64-linux:
+        context:
+            libs:       ['graphics_vulkan', 'X11-xcb']
+    x86-win32:
+        context:
+            libs:       ['libgraphics_vulkan.lib', 'vulkan-1.lib']
+    x86_64-win32:
+        context:
+            libs:       ['libgraphics_vulkan.lib', 'vulkan-1.lib']
+    armv7-android:
+        context:
+            libs:       ['graphics_vulkan']
+    arm64-android:
+        context:
+            libs:       ['graphics_vulkan']
