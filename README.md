@@ -27,4 +27,4 @@ If you run into trouble or if you notice any artifacts while using this extensio
 
 ### Using only Vulkan
 
-If you want to only build using Vulkan you need to make sure to exclude the OpenGL graphics adaptor. You can do this by creating an application manifest and using it in the Native Extension section of your ["game.project"](defold://open?path=/game.project) file. You can create an application manifest using this tool: https://britzl.github.io/manifestation/
+If you want to only build using only Vulkan you need to exclude the OpenGL graphics adapter. You can do this by creating an application manifest and using it in the Native Extension section of your ["game.project"](defold://open?path=/game.project) file. You can create an application manifest using this tool: https://britzl.github.io/manifestation/
