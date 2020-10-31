@@ -1,5 +1,17 @@
 // Defold SDK
 #include <dmsdk/sdk.h>
+#include <stdint.h>
+
+
+#if defined(DM_PLATFORM_IOS) && !defined(__arm64__)
+    #define VULKAN_NOT_SUPPORTED 1
+#endif
+
+#if defined(VULKAN_NOT_SUPPORTED)
+
+extern "C" void GraphicsAdapterVulkan() {}
+
+#else
 
 #define LIB_NAME "Vulkan"
 
@@ -27,3 +39,5 @@ dmExtension::Result FinalizeVulkan(dmExtension::Params* params)
 }
 
 DM_DECLARE_EXTENSION(Vulkan, LIB_NAME, AppInitializeVulkan, AppFinalizeVulkan, InitializeVulkan, 0, 0, FinalizeVulkan)
+
+#endif

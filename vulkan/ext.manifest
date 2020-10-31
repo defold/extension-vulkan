@@ -9,6 +9,10 @@ platforms:
         context:
             frameworks: ['Metal', 'QuartzCore']
             libs:       ['graphics_vulkan', 'MoltenVK']
+    arm64-ios:
+        context:
+            frameworks: ['Metal', 'QuartzCore']
+            libs:       ['graphics_vulkan', 'MoltenVK']
     x86_64-linux:
         context:
             libs:       ['graphics_vulkan', 'X11-xcb']
