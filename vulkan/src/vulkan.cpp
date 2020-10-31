@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 
-#if defined(DM_PLATFORM_IOS) && !defined(__arm64__)
+#if defined(DM_HEADLESS) || defined(DM_PLATFORM_IOS) && !defined(__arm64__)
     #define VULKAN_NOT_SUPPORTED 1
 #endif
 
