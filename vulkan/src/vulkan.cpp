@@ -1,5 +1,4 @@
 // Defold SDK
-#define DLIB_LOG_DOMAIN LIB_NAME
 #include <dmsdk/sdk.h>
 
 #define LIB_NAME "Vulkan"
