@@ -18,6 +18,13 @@ Or point to the ZIP file of a [specific release](https://github.com/defold/exten
 
 Note that this extension requires that the 'Output Spirv' (`shader.output_spirv`) setting is enabled in the ["game.project"](defold://open?path=/game.project) file, otherwise you will get compilation errors when building your projects.
 
+Edit your game.project file in a plain text editor and add these lines:
+
+```
+[shader]
+output_spirv = 1
+```
+
 
 ## Getting help
 
