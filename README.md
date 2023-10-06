@@ -6,6 +6,8 @@ This extension is no longer maintained and is no longer needed to use vulkan in 
 
 <img width="1142" alt="image" src="https://github.com/defold/extension-vulkan/assets/169640/f7f07cb6-9011-4159-92da-b33c2e4da60d">
 
+**Please report any issues to the main Defold repository! (https://github.com/defold/defold)**
+
 This extension enables Vulkan support for Defold, by adding a Vulkan graphics adapter that will be used if the client device supports it. If Vulkan is not supported, the default OpenGL will be used instead.
 
 
